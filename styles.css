@@ -1,0 +1,94 @@
+/* Общие стили */
+QWidget {
+    background-color: #f0f0f0; /* Цвет фона для всех виджетов */
+    color: #333; /* Цвет текста */
+    font-size: 16px; /* Размер шрифта для всех элементов */
+    margin: 2px; /* Внутренние отступы для всех виджетов */
+}
+
+QLabel, QLineEdit, QDateEdit, QPushButton {
+    margin-left: 2px; /* Отступ слева */
+}
+
+#title_label {
+    font-size: 18px; /* Больший размер шрифта для заголовка */
+    margin-left: 0px; /* Отступ слева для заголовка */
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-weight: bold; /* Жирный шрифт */
+    color: #007BFF; /* Цвет текста заголовка */
+}
+
+QLineEdit, QDateEdit {
+    padding: 8px; /* Внутренние отступы для текстовых полей */
+    border: 1px solid #ccc; /* Обводка текстовых полей */
+    border-radius: 4px; /* Закругление углов текстовых полей */
+    background-color: #fff; /* Цвет фона текстовых полей */
+}
+
+QPushButton {
+    padding: 10px 20px; /* Внутренние отступы для кнопок */
+    border: 1px solid #ccc; /* Обводка кнопок */
+    border-radius: 4px; /* Закругление углов кнопок */
+    background-color: #007BFF; /* Основной цвет фона кнопок */
+    color: #fff; /* Цвет текста кнопок */
+}
+
+QPushButton:hover {
+    background-color: #0056b3; /* Цвет фона кнопок при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #004c99; /* Цвет фона кнопок при нажатии */
+}
+
+#main_widget {
+    background-color: #fff; /* Цвет фона центрального виджета */
+    border: 1px solid #ccc; /* Обводка центрального виджета */
+    border-radius: 10px; /* Закругление углов центрального виджета */
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#horizontal_layout {
+    spacing: 10px; /* Пространство между элементами горизонтального layout */
+    margin-top: 20px; /* Верхний отступ для горизонтального layout */
+    background-color: #e9ecef; /* Цвет фона для выделения блока */
+    border: 1px solid #ccc; /* Обводка блока */
+    border-radius: 8px; /* Закругление углов блока */
+}
+
+#label_code {
+    font-size: 16px; /* Размер шрифта для надписи "Код зачетной книжки" */
+    font-weight: bold; /* Жирный шрифт */
+    color: #007BFF; /* Цвет текста */
+    margin-right: 10px; /* Отступ справа */
+}
+
+#generated_code_label {
+    font-size: 18px; /* Размер шрифта для сгенерированного кода */
+    font-weight: bold; /* Жирный шрифт */
+    color: #333; /* Цвет текста */
+    background-color: #f0f0f0; /* Цвет фона */
+    padding: 5px 10px; /* Внутренние отступы */
+    border-radius: 4px; /* Закругление углов */
+    border: 1px solid #ccc; /* Обводка */
+}
+
+#clear_button {
+    background-color: #ff7f50; /* Оранжевый */
+    color: #fff; /* Белый текст */
+    border: none; /* Убираем стандартную обводку */
+    border-radius: 4px; /* Закругление углов */
+    padding: 10px 20px; /* Внутренние отступы */
+}
+
+#clear_button:hover {
+    background-color: #cc6e3c; /* Темно-оранжевый при наведении */
+}
+
+#clear_button:pressed {
+    background-color: #a15b32; /* Темно-оранжевый при нажатии */
+}
+
+
