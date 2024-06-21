@@ -10,6 +10,22 @@ QLabel, QLineEdit, QDateEdit, QPushButton {
     margin-left: 2px; /* Отступ слева */
 }
 
+QDateEdit {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+QDateEdit QCalendarWidget {
+    background-color: #f0f0f0; /* Цвет фона календаря */
+    border: 1px solid #ccc; /* Обводка календаря */
+    width: 300px; /* Ширина календаря */
+    font-size: 13px; /* Размер шрифта в календаре */
+    color: #333; /* Цвет текста в календаре */
+    selection-background-color: #007BFF; /* Цвет выделения в календаре */
+    selection-color: #fff; /* Цвет текста выделения в календаре */
+}
+
 #title_label {
     font-size: 18px; /* Больший размер шрифта для заголовка */
     margin-left: 0px; /* Отступ слева для заголовка */

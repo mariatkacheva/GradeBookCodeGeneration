@@ -44,8 +44,12 @@ class MainWindow(QMainWindow):
 
         for text in labels:
             label = QLabel(text, self)
-            # Условие для создания QLineEdit или QDateEdit в зависимости от текста метки
-            edit_widget = QLineEdit() if text != "Дата рождения:" else QDateEdit()
+            if text != "Дата рождения:":
+                edit_widget = QLineEdit()
+            else:
+                edit_widget = QDateEdit()
+                edit_widget.setCalendarPopup(True)  # Открывать календарь при фокусировке
+
             self.line_edits[text] = edit_widget
             self.form_layout.addRow(label, edit_widget)
             label.setObjectName("line_edit" if text != "Дата рождения:" else "date_edit")
